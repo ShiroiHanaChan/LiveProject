@@ -1510,7 +1510,7 @@
     "npmCreatePackageLock" : 1,
     "npmInstallOptionalDependencies" : 1,
     "npmSaveExactVersion" : 1,
-    "npmTargetDependencyListType" : 1,
+    "npmTargetDependencyListType" : 4,
     "overrideExternalServerCSS" : 0,
     "previewPathAddition" : "",
     "purgeCSS" : {
