@@ -5,18 +5,30 @@ import { useParams } from 'react-router-dom';
 
 export default function Employee() {
 
-  const { data, status } = useQuery(
+  let { employeeId } = useParams();
+
+  const { data, status, error } = useQuery(
     { queryKey: ['employees'], queryFn: fetchEmployees, }
   );
 
-  let { employeeId } = useParams();
+  if (status === 'loading') {
+    return <article>Loading...</article>
+  }
 
+  if (status === 'error') {
+    return <div>Error: {error.message}</div>
+  }
+  
   return (
     <>
       <section aria-labelledby='employeeIdCard'>
         <h2 id='employeeIdCard'>Status: {status}</h2>
         <article>Woomy ID: { employeeId }</article>
-        <pre>{JSON.stringify(data, null, 2)}</pre>
+        <span>
+          { JSON.stringify( data.find((employee) => {
+            return employee.id === Number(employeeId)
+        }) ) }
+        </span>
       </section>
     </>
   );
