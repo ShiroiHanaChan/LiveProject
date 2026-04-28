@@ -222,6 +222,19 @@
       "sC" : 3,
       "tS" : 1
     },
+    "\/src\/scss\/employee-card.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 1,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/css\/employee-card.css",
+      "oF" : 1,
+      "oS" : 1,
+      "pg" : 0
+    },
     "\/src\/theme\/index.js" : {
       "bF" : 0,
       "ft" : 64,

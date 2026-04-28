@@ -3,6 +3,7 @@ import { useQuery } from '@tanstack/react-query'
 import { fetchEmployees } from '../App';
 import { useParams } from 'react-router-dom';
 import { border } from '@chakra-ui/react';
+import '../css/employee-card.css'
 
 export default function Employee() {
 
@@ -28,17 +29,20 @@ export default function Employee() {
   
   return (
     <>
-      <section aria-labelledby='employeeIdCard'>
-        <h2 id='employeeIdCard'>Status: {status}</h2>
-        <article>Woomy ID: { employeeId }</article>
+      <h1>Status: {status}</h1>
+      <article>Woomy ID: { employeeId }</article>
+      <span>
+        { JSON.stringify( requestedEmployee) }
+      </span>
+
+      <section className='employee-id-card' aria-labelledby='employeeIdCard'>
+        <img src={ ['http://localhost:3030/', requestedEmployee.imageFilePath].join('') } alt="" />
         <span>
-          { JSON.stringify( requestedEmployee) }
+          <h2 id='employeeIdCard'>{ `${firstName} ${lastName}` }</h2>
+          <p>{ `${jobTitle} | ${teamName}` }</p>
         </span>
-        {/* <img src={ 'http://localhost:3030/' + requestedEmployee.imageFilePath } alt="" /> */}
-        <img src={ ['http://localhost:3030/', requestedEmployee.imageFilePath].join('') } alt="" style={ { width: '170px', } } />
-        <p>{ `${firstName} ${lastName}` }</p>
-        <p>{ `${jobTitle} | ${teamName}` }</p>
       </section>
     </>
   );
 }
+{/* <img src={ 'http://localhost:3030/' + requestedEmployee.imageFilePath } alt="" /> */}
