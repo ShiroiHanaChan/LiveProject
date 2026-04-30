@@ -170,6 +170,17 @@
       "sC" : 3,
       "tS" : 1
     },
+    "\/src\/components\/EmployeeResult.jsx" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/components\/min\/EmployeeResult-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
     "\/src\/components\/Header.jsx" : {
       "bF" : 0,
       "ft" : 64,
@@ -188,6 +199,17 @@
       "mi" : 0,
       "oA" : 1,
       "oAP" : "\/src\/components\/min\/SearchInput-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/src\/components\/SearchResults.jsx" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/components\/min\/SearchResults-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 1
@@ -268,6 +290,19 @@
       "oAP" : "\/src\/css\/employee-card.css",
       "oF" : 1,
       "oS" : 1,
+      "pg" : 0
+    },
+    "\/src\/scss\/employee-search-cascade.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 1,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/css\/employee-search-cascade.css",
+      "oF" : 1,
+      "oS" : 3,
       "pg" : 0
     },
     "\/src\/scss\/header-search-bar.scss" : {

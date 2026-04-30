@@ -2,6 +2,7 @@ import { Container } from "@chakra-ui/react";
 import { Route, Routes } from "react-router-dom";
 
 import Employee from "./components/Employee";
+import SearchResults from "./components/SearchResults";
 import { Header } from "./components/Header";
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 
@@ -14,31 +15,17 @@ export async function fetchEmployees() {
 function App() {
   return (
     <>
-      <Routes>
-        
-        <Route path="/" element={
-          <>
-            <Header />
-            <Container pt="6" maxW="container.md">
-            {/* add non-header content here */}
-            </Container>
-          </>
-        } />
-
-        <Route path="/employees/:employeeId" element={
-          <>
-            <Header />
-              <Container pt="6" maxW="container.md">
-              {/* add non-header content here */}
-              <Employee />
-            </Container>
-          </>
-        } />
-
-      </Routes>
+      <Header />
+          {/* add non-header content here */}
+          <Routes>
+            <Route path="/" element={ <SearchResults /> } />
+            <Route path="/employees/:employeeId" element={ <Employee /> } />
+          </Routes>
       <ReactQueryDevtools />
     </>
   );
 }
 
 export default App;
+
+/*  */

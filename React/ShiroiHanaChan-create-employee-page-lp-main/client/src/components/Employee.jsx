@@ -9,7 +9,7 @@ export default function Employee() {
 
   let { employeeId } = useParams();
 
-  const { data, status, error } = useQuery(
+  const { data: employeeData, status, isLoading } = useQuery(
     { queryKey: ['employees'], queryFn: fetchEmployees, }
   );
 
@@ -17,11 +17,7 @@ export default function Employee() {
     return <article>Loading...</article>
   }
 
-  if (status === 'error') {
-    return <div>Error: {error.message}</div>
-  }
-
-  const requestedEmployee = data.find((employee) => {
+  const requestedEmployee = employeeData.find((employee) => {
             return employee.id === Number(employeeId)
         });
 

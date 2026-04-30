@@ -1,19 +1,25 @@
 .employee-id-card {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 175px 400px;
   align-items: center;
   gap: .5em;
   margin: auto;
+  padding: .5em;
+  border: 1px solid gray;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgb(156, 156, 156);
+  margin-inline: .5em;
 
   > img {
     width: 175px;
   }
 
-  > span h2 {
-    font-size: 3em;
+  > span p {
+    font-size: 1.25em;
   }
 
-  > span p {
-    font-size: 1.5em;
+  &-results {
+    @extend .employee-id-card;
+    margin-block: 1em;
   }
 }
