@@ -1,14 +1,9 @@
 import { Container } from "@chakra-ui/react";
-import { Header } from "./components/Header";
-import {
-  QueryClient,
-  QueryClientProvider,
-  useQuery,
-} from '@tanstack/react-query'
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
-import Employee from "./components/Employee";
+import { Route, Routes } from "react-router-dom";
 
-const queryClient = new QueryClient();
+import Employee from "./components/Employee";
+import { Header } from "./components/Header";
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 
 // TODO: Refactor
 export async function fetchEmployees() {
@@ -19,14 +14,29 @@ export async function fetchEmployees() {
 function App() {
   return (
     <>
-      <QueryClientProvider client={queryClient}>
-        <Header />
-        <Container pt="6" maxW="container.md">
-          {/* add non-header content here */}
-          <Employee />
-        </Container>
-        <ReactQueryDevtools />
-      </QueryClientProvider>
+      <Routes>
+        
+        <Route path="/" element={
+          <>
+            <Header />
+            <Container pt="6" maxW="container.md">
+            {/* add non-header content here */}
+            </Container>
+          </>
+        } />
+
+        <Route path="/employees/:employeeId" element={
+          <>
+            <Header />
+              <Container pt="6" maxW="container.md">
+              {/* add non-header content here */}
+              <Employee />
+            </Container>
+          </>
+        } />
+
+      </Routes>
+      <ReactQueryDevtools />
     </>
   );
 }

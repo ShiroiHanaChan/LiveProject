@@ -1,6 +1,7 @@
 import { Heading, HStack } from "@chakra-ui/react";
 
 import { SongRiverLogo } from "./SongRiverLogo";
+import SearchInput from "./SearchInput";
 
 export function Header() {
   return (
@@ -17,6 +18,7 @@ export function Header() {
       <Heading as="h1" size="lg">
         Employee&nbsp;&nbsp;Directory
       </Heading>
+      <SearchInput />
     </HStack>
   );
 }

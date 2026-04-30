@@ -181,6 +181,17 @@
       "sC" : 3,
       "tS" : 1
     },
+    "\/src\/components\/SearchInput.jsx" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/components\/min\/SearchInput-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
     "\/src\/components\/SongRiverLogo.jsx" : {
       "bF" : 0,
       "ft" : 64,
@@ -211,6 +222,30 @@
       "rFN" : 0,
       "uCM" : 0
     },
+    "\/src\/css\/employee-card.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/css\/employee-card-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/src\/css\/header-search-bar.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/css\/header-search-bar-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/src\/main.jsx" : {
       "bF" : 0,
       "ft" : 64,
@@ -233,6 +268,19 @@
       "oAP" : "\/src\/css\/employee-card.css",
       "oF" : 1,
       "oS" : 1,
+      "pg" : 0
+    },
+    "\/src\/scss\/header-search-bar.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 1,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/css\/header-search-bar.css",
+      "oF" : 1,
+      "oS" : 3,
       "pg" : 0
     },
     "\/src\/theme\/index.js" : {
